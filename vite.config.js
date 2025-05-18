@@ -7,15 +7,16 @@ export default defineConfig({
   plugins: [
     // React plugin is required for JSX transformation
     react(),
-    tailwindcss()
+    tailwindcss(),
   ],
   server: {
     // Listen on all network interfaces
-    host: '0.0.0.0',
+    host: "0.0.0.0",
     allowedHosts: [
-      'latestportifolio.onrender.com',
-      'localhost',
-      '127.0.0.1'
+      "latestportifolio.onrender.com",
+      "www.buildwithexcel.dev",
+      "localhost",
+      "127.0.0.1",
     ],
     // Use PORT environment variable provided by Render, or default to 5173 for local development
     port: parseInt(process.env.PORT || 5173),
